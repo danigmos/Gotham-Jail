@@ -8,7 +8,7 @@ function login(e){
 	e.preventDefault()	
 	
 	if ((user.value == 'admin') && (psw.value == 'gotham20')) {
-		document.cookie = "logged=si";
+		document.cookie = "logged=yes";
 		location.href = "home.html"
 	} 
 	else {

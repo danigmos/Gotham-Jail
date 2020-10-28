@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gotham Jail</title>
+    <title>Gotham Jail Dashboard</title>
     <script src="./app.js" defer type="module"></script>
 
     <link rel="stylesheet" href="assets/css/app.css">
@@ -13,7 +13,7 @@
         <div class="imageContainer">
             <img src="./assets/img/logo.png" alt=""/>
         </div>
-        <h1>Gotham Jail Dashboard</h1>
+        <h1>Gotham Jail</h1>
     </header>
 
     <div class="buttonsShow">
@@ -31,7 +31,7 @@
                 <h2>Nome</h2>
                 <strong>razza</strong><br>
                 <span>Caratteristiche fisiche:</span>
-                <ul>
+                <ul id="deepInfo">
                 </ul>
                 <label>Livello di pericolo:</label>
                 <h4>livello pericolo</h4>
@@ -39,6 +39,7 @@
             <button class="button" id="modBtn" type="button">Modifica</button>
         </div>
     </template>
+    <div id="countCarcerati"></div> 
     <div id="carceratiContainer"></div>
     
     <template id="guardie">

@@ -1,10 +1,10 @@
 {
-    "guardia1":{
+    "guardia1":[{
         "nomeGuardia": "Carl",
         "esperienza": "Guardia Senior",
         "provenienza": "Cina",
         "codiceIdentificativo": "A001"
-    },
+    }],
     "guardia2":{
         "nomeGuardia": "Sempronio",
         "esperienza": "Guardia Junior",

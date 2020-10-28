@@ -87,3 +87,29 @@ body {
 .intestazione h1, .intestazione h2  { text-align: center; font-weight: normal; margin:0;}
 .intestazione { margin-bottom:30px;}
 /* fine login */
+html body #carceratiContainer{
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+}
+html body #card #carceratiContainer{
+  flex-grow: 1;
+  background-color: black;
+  border-radius: 4px;
+  padding: 20px;
+  height: 400px;
+  width: 300px;
+  color: white;
+  margin-top: 10px;
+  display: flex;
+  position: absolute;
+}
+
+html body #card #modBtn{
+  display: inline-block;
+}
+
+#textCard{
+  display: block;
+  
+}
