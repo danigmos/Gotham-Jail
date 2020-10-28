@@ -15,14 +15,40 @@ class Detenuto {
         const dati = await richiesta.json();
     	
         dati.map( el => {
-            const cardDetenuti = document.importNode(detenutiList, true);
+            const cardDetenuti = document.importNode(detenutiList.content, true);
+            let li = document.createElement('li');
+        
+            const ul = cardDetenuti.querySelector('ul');
+            //console.log(ul);
 
-            cardDetenuti.querySelector('h2').textContent = el;
+            cardDetenuti.querySelector('h2').textContent = el.nomePersonaggio;
+            cardDetenuti.querySelector('strong').textContent = el.razza;
+            cardDetenuti.querySelector('h4').textContent = el.livelloDiPericolo;
+            // li.textContent = el.caratteristicheFisiche.altezza;
+            // ul.appendChild(li);
+            // li.textContent = el.caratteristicheFisiche.coloreCapelli;
+            let elem = '<ul><li> Altezza: '+el.caratteristicheFisiche.altezza+'</li>'
+            elem += '<li> Colore Capelli: '+el.caratteristicheFisiche.coloreCapelli+'</li>'
+            elem += '<li> Colore Occhi: '+el.caratteristicheFisiche.coloreOcchi+'</li>'
+            elem += '<li> Peso: '+el.caratteristicheFisiche.peso+'</li> </u>';
+            // const lis = document.createElement('li')
+            // lis.textContent = el.caratteristicheFisiche.coloreCapelli;
+            cardDetenuti.querySelector('ul').innerHTML = elem;
+            // li.textContent = el.caratteristicheFisiche.coloreOcchi;
+            // ul.appendChild(li);
+            // li.textContent = el.caratteristicheFisiche.peso;
+            // ul.appendChild(li);
+
+            //cardDetenuti.appendChild(ul);
+            //console.log(el.caratteristicheFisiche.length);
+            return detenutiContainer.appendChild(cardDetenuti);
+
+           
 
 
-            detenuti.push(el);
+            //detenuti.push(el);
         })
-        console.log(detenuti[0]);
+       // console.log(detenuti[0]);
     }
 
     static start(){

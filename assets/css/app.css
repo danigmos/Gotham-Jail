@@ -47,26 +47,43 @@ body {
 
 
 /* login */
-.container-login { padding:5%;}
-.container-login .error { color:red;} 
+.bglogin {  
+  background-image: url('https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/fog--mist/fog-in-the-treetops.jpg'); 
+  background-position:center left;
+  background-repeat:no-repeat;
+}
+.container-login { 
+  padding: 3%;
+  width: 350px;
+  margin: auto;
+  background: #fff;
+  margin-top: 5%;
+  border-radius: 10px;
+  /*box-shadow: 0px 0px 10px #000;
+  -webkit-box-shadow: 0px 0px 10px #000;
+  -moz-box-shadow: 0px 0px 10px #000;
+  -o-box-shadow: 0px 0px 10px #000;*/
+  }
+.container-login .error { color:red; } 
 #formlogin { margin:auto; width:200px;}
-label, input { display: block; text-align: center;}
+#formlogin label, input { display: block; text-align: center;}
 #formlogin input { margin-bottom:20px; padding:10px; margin-top:10px; width:178px;}
 #formlogin .button {
-    background-color:#000;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: block; 
-    font-size: 16px;
-    margin: auto;
-    cursor: pointer;
-    font-family: 'Roboto Slab';
+  background-color:#000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block; 
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  font-family: 'Roboto Slab';
   }
-  #formlogin .button:hover {
+#formlogin .button:hover {
   background-color: #333;
   }
 .intestazione h1, .intestazione h2  { text-align: center; font-weight: normal; margin:0;}
 .intestazione { margin-bottom:30px;}
+/* fine login */
