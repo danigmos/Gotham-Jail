@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@400;500&display=swap');
+
+body { 
+  font-family:'Roboto Slab';
+  background-color: #ffffff;
+}
+
+.headerContainer{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.imageContainer{
+    height: 150px; /* height of container */
+    overflow: hidden;
+    border: 1px solid rgb(100, 100, 100)
+}
+
+.headerContainer img{
+  width : 100%;
+  height : auto;
+}
+
+.headerContainer h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buttonsShow{
+  text-align: center;
+  padding: 30px;
+}
+
+.buttonsShow button{
+  background-color:black;
+  color:white;
+  padding: 15px 30px;
+  margin: 15px;
+  font-size: 20px;
+  font-family: 'Roboto Slab';
+  cursor: pointer;
+}
+  .buttonShow button:hover{
+    background-color: #333;
+  }
+
+
+
+/* login */
+.container-login { padding:5%;}
+.container-login .error { color:red;} 
+#formlogin { margin:auto; width:200px;}
+label, input { display: block; text-align: center;}
+#formlogin input { margin-bottom:20px; padding:10px; margin-top:10px; width:178px;}
+#formlogin .button {
+    background-color:#000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    font-family: 'Roboto Slab';
+  }
+  #formlogin .button:hover {
+  background-color: #333;
+  }
+.intestazione h1, .intestazione h2  { text-align: center; font-weight: normal; margin:0;}
+.intestazione { margin-bottom:30px;}
